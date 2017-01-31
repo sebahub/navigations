@@ -1,0 +1,77 @@
+// .nav_wrapper
+//   width: 100%
+//   height: auto
+//   background: hotpink
+//   max-width: 1400px
+//   margin: auto
+body
+  height: 2000px
+
+.topbar
+  width: 100%
+  height: 75px
+  //background: red
+  margin: auto
+  .logo
+    width: 95%
+    margin: auto
+    max-width: 1400px
+    position: relative
+    top: 15px
+
+    img
+      height: 50px
+
+nav.nav_one
+  margin: auto
+  width: 95%
+  max-width: 1400px
+  height: 30px
+  margin-top: 20px
+  //background: red
+  border-top: 1px solid lightgrey
+  //transition: all ease 2s
+  ul
+    //background: yellow
+    +nav_center
+    margin-top: 10px
+li
+  text-transform: uppercase
+  font-family: helvetica
+  font-weight: 100
+  cursor: pointer
+nav.nav_one.fixed
+  position: fixed
+  top: 0
+  margin-top: 0
+  margin-left: 50%
+  transform: translateX(-50%)
+
+nav.nav_two
+  margin: auto
+  width: 95%
+  max-width: 1400px
+  height: 30px
+  margin-top: 20px
+  border-top: 1px solid lightgrey
+  //transition: all ease 2s
+  ul
+    +nav_center
+    margin-top: 10px
+
+nav.nav_two.resize
+
+
+.topbar.fixed.two
+  position: fixed
+  .logo
+    transition: all 2s ease-in
+    img
+      transition: all 0.2s ease-in
+
+
+.topbar.fixed.two.resize
+  height: 20px
+  .logo
+    img
+      height: 15px
